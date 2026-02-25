@@ -8,7 +8,7 @@ github_issue: 2
 title: Welcome to my DIgital Garden
 ---
 
-# 👋 Hello，I am [許珈寧] Jasmine Shiu
+# 👋 Hello，I am 許珈寧Jasmine Shiu
 
 I will not only display my works here, but also share my notes and **thoughts** during **the** learning process.
 
@@ -21,9 +21,12 @@ I will not only display my works here, but also share my notes and **thoughts**
 * **🤖 硬體與機器人**：
     * [[Robotics]] - 機器人學筆記
     * [[電聲工程]]
+    * [[半導體檢測技術]]
+    * [[機器人動力學]]
 * **🧠 思考與人文**：
     * [[希臘哲學]] - 蘇格拉底與那些哲學家
     * [[人生系統]] - 關於生活與成長的思考
+    
 
 > [!info] 關於這裡
 > 這裡的筆記就像花園裡的植物，有些已經長大（完成），有些還在發芽（草稿）。如果你發現錯誤或有興趣交流，歡迎聯絡我！
