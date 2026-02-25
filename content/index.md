@@ -30,6 +30,8 @@ I will not only display my works here, but also share my notes and **thoughts**
 
 > [!info] 關於這裡
 > 這裡的筆記就像花園裡的植物，有些已經長大（完成），有些還在發芽（草稿）。如果你發現錯誤或有興趣交流，歡迎聯絡我！
+> email: haibara0225@gmail.com
+> github:github.com/haibara-hsu
 
 ---
-[你的 Email 或 GitHub 連結]
+
