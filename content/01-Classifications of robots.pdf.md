@@ -97,32 +97,21 @@
 - [[Dimension 3 (Autonomy) Teleoperated — Automated  (Scripted) — Autonomous (AI)]]
 
 
-![[Pasted image 20260225112748.png]]
+![[01-Classifications of robots01.png]]
 
 
 ## kinematics
 
-![[Pasted image 20260225113210.png]]
-
-![[Pasted image 20260225113658.png]]
-
-![[Pasted image 20260225114140.png]]
-![[Pasted image 20260225114612.png]]
+![[01-Classifications of robots02.png]]
 
 
-![[Pasted image 20260225114838.png]]
+![[01-Classifications of robots03.png]]
 
-## autonomy
-iso 9283 16066
-Trade-off between intelligence (planning) and speed (reaction).
-Autonomy refers to a robot's ability to operate independently, making  
-decisions and performing tasks without continuous human control
-  
-ISO 10218 (Industrial Robots) and ISO/TS 15066 (Collaborative  
-Operation) regulate industrial robot safety.
-![[Pasted image 20260225115639.png]]
-Safety Monitored Stop (SMS):
-Hand Guiding (HG)
-Speed & Separation Monitoring (SSM):
-Power & Force Limiting (PFL):
+
+![[01-Classifications of robots04.png]]
+![[01-Classifications of robots05.png]]
+
+
+![[01-Classifications of robots06.png]]
+![[01-Classifications of robots07.png]]
 
