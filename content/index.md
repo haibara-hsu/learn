@@ -19,7 +19,7 @@ I will not only display my works here, but also share my notes and **thoughts**
     * [[coding]] - 我的程式學習路徑
     * [[OSI 模型 (Open System Interconnection Model)]] - 網路基礎知識
 * **🤖 硬體與機器人**：
-    * [[Robotics]] - 機器人學筆記
+    * [[機器人視覺]]
     * [[電聲工程]]
     * [[半導體檢測技術]]
     * [[機器人動力學]]

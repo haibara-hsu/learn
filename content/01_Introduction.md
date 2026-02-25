@@ -1,31 +1,112 @@
-Robot Def:
-Type
-1. Spherical or polar
-2. Cylindrical
-3. Cartesian or gantry
-4. Articulated:have three or more rotary joints
-	1. 4-axis
-	2. 3-axis
-	3. 6-axis 如 YAMAHA、KUKA（已被中國收購）等品牌。
-	4. 7-axis 具冗餘關節，逆向運動學有無窮多解。
-	- **6軸關節功能：**
-		- **S軸：** 基座水平旋轉。
-		- **L軸：** 機身前後移動。
-		- **U軸：** 手臂上下移動。
-		- **R軸：** 手臂旋轉。
-		- **B軸：** 末端上下擺動。
-		- **T軸：** 末端旋轉。
-5. Wrist design 方便逆向運動學計算
-	1. spherical wrist
-	2. non-spherical wrist
-	-   The last three joint axes are often designed to  intersect at a common point called the wrist center.  
-	- This arrangement leads to complete decoupling of  the position from the orientation problem. The arm  delivers the wrist center anywhere in its primary  workspace, while the wrist controls the orientation  of the end-effector.
-- 開環：正向運動學簡單 逆向運動學難
-- 閉環：相反
-1. Parallel:has a closed loop structure
-2. SCARA: two parallel rotary joints to provide compliance in a selected plane
-		serial
-		parallel
-3. wearable
-4. legged
-5. 
+
+---
+
+# 🤖 機器人學概論：定義與結構分類
+
+## 📌 定義 (Definition)
+
+> [!ABSTRACT] 機器人 (Robot)
+> 
+> 一種結合**控制系統**、具備**自主性**，且能透過感知與行動的智慧連結，執行多功能、可重編程之移動或操作任務的**自動化機械裝置**。
+
+---
+
+## 🏗️ 核心運動構造 (Joint Mechanisms)
+
+根據運動方式，基本元件可分為：
+
+- **R (Revolute joint):** 1-DoF 旋轉關節。
+    
+- **P (Prismatic joint):** 1-DoF 平移關節。
+    
+
+### 主要機器人結構分類
+
+|**結構類型**|**符號組合**|**說明**|
+|---|---|---|
+|**直角座標型 (Cartesian/Gantry)**|**PPP**|三個軸皆為平移，適合大型搬運。|
+|**圓柱座標型 (Cylindrical)**|**RPP**|一個旋轉、二個平移。|
+|**球面座標型 (Spherical/Polar)**|**RRP**|兩個旋轉、一個平移。|
+|**SCARA**|**RRP**|具備兩個平行旋轉關節，在特定平面具備順應性。|
+|**關節型 (Articulated)**|**RRR+**|具有三個或更多旋轉關節，自由度最高。|
+
+---
+
+## 🦾 關節型機器人 (Articulated Robot)
+
+### 軸數分類
+
+1. **3-axis / 4-axis:** 常見於簡單封裝。
+    
+2. **6-axis:** 最主流類型（如 YAMAHA, KUKA）。
+    
+3. **7-axis:** 具備**冗餘關節 (Redundant joints)**。
+    
+    - _特性：_ 逆向運動學 (Inverse Kinematics) 有**無窮多解**，可繞過障礙物。
+        
+
+### 6 軸功能拆解
+
+- **S軸 (Base):** 基座水平旋轉。
+    
+- **L軸 (Lower Arm):** 機身前後移動。
+    
+- **U軸 (Upper Arm):** 手臂上下移動。
+    
+- **R軸 (Roll):** 手臂旋轉。
+    
+- **B軸 (Bend):** 末端上下擺動（Pitch）。
+    
+- **T軸 (Twist):** 末端旋轉（Yaw）。
+    
+
+---
+
+## 🖐️ 手腕設計 (Wrist Design)
+
+手腕設計的核心目的在於簡化 **逆向運動學 (IK)** 的計算。
+
+- **球面手腕 (Spherical Wrist):**
+    
+    - 最後三個關節軸交於一點（手腕中心 Wrist Center）。
+        
+    - **優勢：** 實現**位置 (Position)** 與 **姿勢 (Orientation)** 的解耦。手臂負責將中心送達目標，手腕負責調整角度。
+        
+- **非球面手腕 (Non-spherical Wrist):** 軸心不交於一點，計算較複雜。
+    
+
+---
+
+## 🔄 鏈結與運動學特性
+
+### 結構對比
+
+- **開環 (Open-loop / Serial):**
+    
+    - 正向運動學 (FK) 簡單；逆向運動學 (IK) 困難。
+        
+- **閉環 (Closed-loop / Parallel):**
+    
+    - 正向運動學 (FK) 困難；逆向運動學 (IK) 簡單。
+        
+
+### 特殊結構
+
+1. **並聯機器人 (Parallel):** 具備閉環結構，剛性強、速度快（如 Delta Robot）。
+    
+2. **SCARA:** 提供特定平面的順應性，分為串聯與並聯結構。
+    
+3. **穿戴式 (Wearable):** 如外骨骼。
+    
+4. **足式 (Legged):** 多足或雙足移動機器人。
+    
+
+---
+
+## 💡 學習小撇步 (Notes)
+
+> [!TIP] 記憶技巧
+> 
+> 想區分 **SCARA** 與 **Spherical**？
+> 
+> 雖然兩者都是 **RRP**，但 SCARA 的兩個 R 軸是**相互平行**的，主要用於平面取放；Spherical 的 R 軸則通常垂直，用於涵蓋球狀空間。
